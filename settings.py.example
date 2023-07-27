@@ -1,0 +1,22 @@
+# Настройки соединения с БД
+DATABASES = {
+    'bidf': {
+        'TYPE': 'mssql',
+        'NAME': 'BIDF',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',
+
+        'OPTIONS': {
+            'driver': 'ODBC Driver 11 for SQL Server',
+        },
+    },
+}
+
+# Каталоги Recognition Server
+INPUT_PATH = '\\\\Dolphin\\bidf_tmp\\Input'
+OUTPUT_PATH = '\\\\Dolphin\\bidf_tmp\\Output'
+
+# Таймаут ожидания распознавания изображения
+RECOGNIZE_TIMEOUT_SECONDS = 300
